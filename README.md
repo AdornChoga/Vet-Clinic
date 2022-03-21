@@ -1,31 +1,32 @@
-# curriculum-databases-projects-template
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-> This template should be used for database related projects at Microverse.
-> Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
+# Vet-Clinic Database
 
+> In this project, I setup the the stucutre of a vet_clinic database hosted locally using PostgreSQL.
+
+## Built With
+
+- PostgreSQL
 
 ## Getting Started
+To run this application please follow these steps:
 
-This repository includes files with plain SQL that can be used to recreate a database:
+1. Clone the repo onto you local machine
+ - to clone click on the green 'Code' button and copy the HTTPS link. Using `git clone ` command clone the repository on your local machine.
+2. Install PostgreSQL following instructions from the article, [PostgreSQL installations](https://www.postgresql.org/download/) depending on your computer's operating system.
+3. Run `psql`
+4. Create a `vet_clinic` by running the command `CREATE DATABASE vet_clinic`.
+5. Run the query in [schema.sql](./schema.sql) to create the database table.
+6. Run the queries in [data.sql](./data.sql) to populate the animals table data.
 
-- Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
+## Author
 
+👤 **Adorn**
 
-## Authors
+- GitHub: [@AdornChoga](https://github.com/AdornChoga)
+- Twitter: [@adornchoga](https://twitter.com/adorn_choga)
+- LinkedIn: [@adornchoga](https://www.linkedin.com/in/adorn-choga)
 
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
@@ -36,12 +37,6 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
