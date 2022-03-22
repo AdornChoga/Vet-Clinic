@@ -36,7 +36,9 @@ WHERE name LIKE '%mon';
 UPDATE animals
 SET species = 'pokemon'
 WHERE species IS NULL;
+TABLE animals;
 COMMIT;
+TABLE animals;
 
 BEGIN;
 DELETE FROM animals;
