@@ -36,4 +36,7 @@ SET species = 'digimon'
 WHERE name LIKE '%mon';
 COMMIT;
 
+BEGIN;
+DELETE FROM animals;
+ROLLBACK;
 
