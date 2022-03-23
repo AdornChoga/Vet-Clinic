@@ -47,3 +47,33 @@ WHERE name LIKE '%mon';
 UPDATE animals
 SET species_id = 1
 WHERE species_id IS NULL;
+
+BEGIN;
+
+SAVEPOINT Sam;
+UPDATE animals
+SET owner_id = 1
+WHERE name = 'Agumon';
+
+SAVEPOINT JenniferOrwell;
+UPDATE animals
+SET owner_id = 2
+WHERE name = 'Gabumon' OR name = 'Pikachu';
+
+SAVEPOINT Bob;
+UPDATE animals
+SET owner_id = 3
+WHERE name = 'Devimon' OR name = 'Plantmon';
+
+SAVEPOINT MelodyPond;
+UPDATE animals
+SET owner_id = 4
+WHERE name = 'Charmander' OR name = 'Squirtle' OR name = 'Blossom';
+
+SAVEPOINT DeanWinchester;
+UPDATE animals
+SET owner_id = 5
+WHERE name = 'Angemon' OR name = 'Boarmon';
+
+COMMIT;
+
