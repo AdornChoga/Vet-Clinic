@@ -45,8 +45,10 @@ FOREIGN KEY(owner_id)
 REFERENCES owners (id)
 ON DELETE CASCADE;
 
-
-
-
-
-
+CREATE TABLE vets (
+    id INT GENERATED ALWAYS AS IDENTITY,
+    name TEXT NOT NULL,
+    age INT NOT NULL,
+    date_of_graduation date NOT NULL,
+    PRIMARY KEY(id)
+);
