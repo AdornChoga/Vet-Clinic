@@ -52,3 +52,14 @@ CREATE TABLE vets (
     date_of_graduation date NOT NULL,
     PRIMARY KEY(id)
 );
+
+CREATE TABLE specializations (
+    vet_id INT NOT NULL,
+    specialty INT NOT NULL,
+    CONSTRAINT vets_fk
+    FOREIGN KEY (vet_id) REFERENCES vets(id)
+    ON DELETE CASCADE,
+    CONSTRAINT specialty_fk
+    FOREIGN KEY (specialty) REFERENCES species(id)
+    ON DELETE CASCADE
+);
