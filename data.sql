@@ -86,3 +86,10 @@ VALUES ('William Tatcher', 45, '2000-04-23'),
        ('Jack Harkness', 38, '2008-06-08');
 
 COMMIT;
+
+BEGIN;
+
+INSERT INTO specializations
+VALUES (1,1), (3,2), (3,1), (4,2);
+
+COMMIT;
