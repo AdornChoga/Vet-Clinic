@@ -20,6 +20,8 @@ CREATE TABLE owners (
 
 ALTER TABLE owners ADD COLUMN email VARCHAR(120);
 
+CREATE INDEX owners_email_index ON owners (email);
+
 CREATE TABLE species (
     id INT GENERATED ALWAYS AS IDENTITY,
     name TEXT NOT NULL,
@@ -81,3 +83,6 @@ CREATE TABLE  visits (
 CREATE INDEX visits_animal_id_index ON visits(animal_id);
 
 CREATE INDEX visits_vet_index ON visits(vet);
+
+CREATE INDEX visits_vet_index ON visits(vet);
+
