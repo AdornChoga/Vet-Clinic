@@ -77,3 +77,5 @@ CREATE TABLE  visits (
     FOREIGN KEY (vet) REFERENCES vets(id)
     ON DELETE CASCADE
 );
+
+CREATE INDEX visits_animal_id_index ON visits(animal_id);
